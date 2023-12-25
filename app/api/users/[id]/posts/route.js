@@ -9,6 +9,7 @@ export const GET = async (req, { params }) => {
             creator: params.id
         }).populate("creator")
 
+
         return new Response(JSON.stringify(allPost), { status: 200 })
     } catch (error) {
         return new Response("failed to Fetch All Post", { status: 500 })
