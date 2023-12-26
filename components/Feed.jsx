@@ -7,7 +7,7 @@ import PromptCard from "./PromptCard"
 
 const PromptCardList = ({ data, handleTagClick }) => {
     return (
-        <div className='mt-16 prompt_layout'>
+        <div className='mt-16 prompt_layout !items-stretch'>
             {data?.map((post) => (
                 <PromptCard
                     key={post._id}
@@ -44,7 +44,7 @@ const Feed = () => {
 
     return (
         <section className="feed">
-            <form className="w-full relative flex-center">
+            <form className="w-full max-w-[36rem] relative flex-center">
                 <input
                     type="text"
                     value={searchInput}
