@@ -14,13 +14,12 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
     const { data: session } = useSession()
 
     const handleProfileClick = async () => {
-
+        router.push(`/profile/${post.creator._id}`)
     }
 
     const handleCopy = () => {
         setCopied(post.prompt)
         navigator.clipboard.writeText(post.prompt)
-
         setTimeout(() => setCopied(""), 3000)
     }
 

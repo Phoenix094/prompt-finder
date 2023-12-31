@@ -44,7 +44,7 @@ const Feed = () => {
 
     return (
         <section className="feed">
-            <form className="w-full max-w-[36rem] relative flex-center">
+            {/* <form className="w-full max-w-[36rem] relative flex-center">
                 <input
                     type="text"
                     value={searchInput}
@@ -53,7 +53,7 @@ const Feed = () => {
                     className="search_input peer"
                 />
 
-            </form>
+            </form> */}
             <PromptCardList
                 data={allPost}
                 handleTagClick={handleTagClick}

@@ -5,7 +5,10 @@ import Provider from "@components/Provider"
 
 export const metadata = {
     title: "Prompt for Finder",
-    desc: "Discover & Share AI Prompts"
+    desc: "Discover & Share AI Prompts",
+    icons: {
+        icon: ["/favicon.ico?=v4"]
+    }
 }
 
 const RootLayout = ({ children }) => {
